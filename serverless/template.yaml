@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../node_modules/@somod/serverless-schema/schemas/index.json
+
+Resources:
+  BaseHttpApi:
+    Type: AWS::Serverless::HttpApi
+    "SLP::Access": "public"
+    "SLP::Output":
+      default: true
+      attributes: []
+      export:
+        default: apigateway.http.id
+    Properties: {}

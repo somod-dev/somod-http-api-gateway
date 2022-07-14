@@ -1,0 +1,41 @@
+{
+  "name": "somod-http-api-gateway",
+  "version": "0.0.0",
+  "description": "SoMod Module Containing Infrastructure Code providing AWS Http Api Gateway",
+  "module": "build/lib/index.js",
+  "typings": "build/lib/index.d.ts",
+  "files": [
+    "build"
+  ],
+  "sideEffects": false,
+  "somod": "1.9.5",
+  "scripts": {
+    "prettier": "npx prettier --check --ignore-unknown ./**/*",
+    "eslint": "npx eslint ./ --no-error-on-unmatched-pattern",
+    "prebuild": "npm run prettier && npm run eslint",
+    "build": "npx somod build",
+    "prepack": "npm run build",
+    "postversion": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sodaru/somod-http-api-gateway.git"
+  },
+  "author": "Lokesh G C",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sodaru/somod-http-api-gateway/issues"
+  },
+  "homepage": "https://github.com/sodaru/somod-http-api-gateway#readme",
+  "devDependencies": {
+    "eslint-config-sodaru": "^1.0.0",
+    "prettier-config-sodaru": "^1.0.0",
+    "somod": "^1.9.5"
+  },
+  "prettier": "prettier-config-sodaru",
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-sodaru"
+    ]
+  }
+}
