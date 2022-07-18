@@ -1,10 +1,10 @@
-# yaml-language-server: $schema=../node_modules/@somod/serverless-schema/schemas/index.json
+# yaml-language-server: $schema=../node_modules/somod/node_modules/@somod/serverless-schema/schemas/index.json
 
 Resources:
   BaseHttpApi:
     Type: AWS::Serverless::HttpApi
-    "SLP::Access": "public"
-    "SLP::Output":
+    "SOMOD::Access": "public"
+    "SOMOD::Output":
       default: true
       attributes: []
       export:
