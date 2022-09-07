@@ -6,17 +6,12 @@
     "target": "ES5",
     "module": "ES6",
     "rootDir": "./",
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "importHelpers": true,
     "skipLibCheck": true,
     "jsx": "react"
   },
-  "include": [
-    "lib",
-    "ui"
-  ]
+  "include": ["lib", "ui"]
 }

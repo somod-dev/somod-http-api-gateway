@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../node_modules/somod/node_modules/@somod/serverless-schema/schemas/index.json
+# yaml-language-server: $schema=../node_modules/somod/node_modules/@somod/schema/serverless/schemas/index.json
 
 Resources:
   BaseHttpApi:
@@ -7,6 +7,12 @@ Resources:
     "SOMOD::Output":
       default: true
       attributes: []
-      export:
-        default: apigateway.http.id
     Properties: {}
+
+Outputs:
+  apigateway.http.endpoint:
+    Fn::Sub:
+      - https://${apiId}.execute-api.${AWS::Region}.amazonaws.com/
+      - apiId:
+          SOMOD::Ref:
+            resource: BaseHttpApi
