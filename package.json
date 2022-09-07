@@ -8,7 +8,7 @@
     "build"
   ],
   "sideEffects": false,
-  "somod": "1.9.5",
+  "somod": "1.13.3",
   "scripts": {
     "prettier": "npx prettier --check --ignore-unknown ./**/*",
     "eslint": "npx eslint ./ --no-error-on-unmatched-pattern",
@@ -21,16 +21,20 @@
     "type": "git",
     "url": "git+https://github.com/sodaru/somod-http-api-gateway.git"
   },
-  "author": "Lokesh G C",
+  "author": "Lokesh G C<lokesh@sodaru.com>",
+  "contributors": [
+    "Ragahvendra K R<raghavendra@sodaru.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sodaru/somod-http-api-gateway/issues"
   },
   "homepage": "https://github.com/sodaru/somod-http-api-gateway#readme",
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "eslint-config-sodaru": "^1.0.0",
     "prettier-config-sodaru": "^1.0.0",
-    "somod": "^1.10.1"
+    "somod": "^1.13.3"
   },
   "prettier": "prettier-config-sodaru",
   "eslintConfig": {

@@ -1,5 +1,5 @@
-# yaml-language-server: $schema=./node_modules/somod/node_modules/@somod/parameters-schema/schemas/index.json
+# yaml-language-server: $schema=./node_modules/somod/node_modules/@somod/schema/parameters/schemas/index.json
 
 Parameters:
-  apigateway.http.id:
+  apigateway.http.endpoint:
     type: text
