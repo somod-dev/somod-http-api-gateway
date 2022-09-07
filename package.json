@@ -1,6 +1,6 @@
 {
   "name": "somod-http-api-gateway",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "SoMod Module Containing Infrastructure Code providing AWS Http Api Gateway",
   "module": "build/lib/index.js",
   "typings": "build/lib/index.d.ts",
