@@ -17,8 +17,3 @@ npm install somod-http-api-gateway
 
 Refer to [SOMOD Guide](https://somod.sodaru.com) 
 
-## Support
-
-This project is a part of Open Source Intitiative from [Sodaru Technologies](https://sodaru.com)
-
-Write an email to opensource@sodaru.com for queries on this project
