@@ -3,3 +3,35 @@
 Parameters:
   apigateway.http.endpoint:
     type: text
+  apigateway.http.cors.allow_credentials:
+    type: switch
+    default: false
+  apigateway.http.cors.allow_headers:
+    type: select
+    allowFreeText: true
+    default: []
+    multiple: true
+  apigateway.http.cors.allow_methods:
+    type: select
+    allowFreeText: true
+    default: []
+    multiple: true
+  apigateway.http.cors.allow_origins:
+    type: select
+    allowFreeText: true
+    default: []
+    multiple: true
+  apigateway.http.cors.expose_headers:
+    type: select
+    allowFreeText: true
+    default: []
+    multiple: true
+  apigateway.http.cors.max_age:
+    type: number
+    multipleOf: 1
+    default: 0
+
+Groups:
+  apigateway.http.cors:
+    label: CORS
+    helpText: Manage cross-origin resource sharing (CORS) for your Apis.

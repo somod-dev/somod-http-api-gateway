@@ -7,7 +7,20 @@ Resources:
     "SOMOD::Output":
       default: true
       attributes: []
-    Properties: {}
+    Properties:
+      CorsConfiguration:
+        AllowCredentials:
+          SOMOD::Parameter: apigateway.http.cors.allow_credentials
+        AllowHeaders:
+          SOMOD::Parameter: apigateway.http.cors.allow_headers
+        AllowMethods:
+          SOMOD::Parameter: apigateway.http.cors.allow_methods
+        AllowOrigins:
+          SOMOD::Parameter: apigateway.http.cors.allow_origins
+        ExposeHeaders:
+          SOMOD::Parameter: apigateway.http.cors.expose_headers
+        MaxAge:
+          SOMOD::Parameter: apigateway.http.cors.max_age
 
 Outputs:
   apigateway.http.endpoint:
