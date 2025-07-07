@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../node_modules/somod/node_modules/@somod/schema/ui-config/schemas/index.json
+# yaml-language-server: $schema=../node_modules/somod-schema/schemas/ui-config/index.json
 
 env:
   NEXT_PUBLIC_SOMOD_BASE_HTTP_API_ENDPOINT:

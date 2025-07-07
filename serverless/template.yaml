@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=../node_modules/somod/node_modules/@somod/schema/serverless/schemas/index.json
+# yaml-language-server: $schema=../node_modules/somod-schema/schemas/serverless-template/index.json
 
 Resources:
   BaseHttpApi:
